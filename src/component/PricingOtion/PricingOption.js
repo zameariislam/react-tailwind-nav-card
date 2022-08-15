@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Benifit from '../Benifit/Benifit';
+
 const PricingOption = (props) => {
-    const{name,price}=props.option
+    const{name,price,benifits}=props.option
   
     return (
         <div className='bg-white p-4 rounded-lg'>
@@ -10,6 +12,16 @@ const PricingOption = (props) => {
                 <span className='text-6xl font-bold'>{price}</span>
                 <span className='text-xl font-bold text-gray-500'>/month</span>
             </p>
+            <div>
+                
+                {
+                    benifits.map((benifit)=><Benifit benifit={benifit}></Benifit>)
+                }
+
+
+               
+
+            </div>
             
         </div>
     );
