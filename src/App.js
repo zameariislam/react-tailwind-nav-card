@@ -2,6 +2,7 @@
 import './App.css';
 
 import Navbar from './component/NavBar/Navbar';
+import Pricing from './component/Pricing/Pricing';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
  
    <Navbar/>
+   <Pricing/>
 
       
     </div>
